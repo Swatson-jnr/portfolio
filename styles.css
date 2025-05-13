@@ -58,6 +58,10 @@
   }
 } */
 
+body {
+  font-family: "Roboto", Arial, sans-serif;
+}
+
 nav {
   background-color: transparent;
   display: flex;
@@ -91,6 +95,7 @@ nav {
 .hero-content {
   width: 80%;
   margin: auto;
+  position: relative;
 }
 
 .text-white {
@@ -108,8 +113,99 @@ nav {
   line-height: 1.2;
 }
 
-.hero-content .web{
+.hero-content .web {
   animation: typing;
 }
 
+.typing {
+  border-right: 1px solid #00ffee;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 6s steps(23) infinite;
+}
 
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 58ch;
+  }
+  100% {
+    width: 0ch;
+  }
+}
+
+.hanging-text {
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  width: 70px;
+  text-align: center;
+  border-radius: 4px;
+  z-index: 1;
+  font-weight: 700;
+  color: #0779e4;
+  white-space: nowrap;
+  font-size: 13px;
+  background: #fff;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.hanging-text::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: white;
+  position: absolute;
+  bottom: -4px;
+  left: 25px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.port-buttons {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.hire {
+  background-color: #0779e4;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.view {
+  background-color: #fff;
+  color: #0779e4;
+  padding: 16px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  width: 170px;
+  height: 50px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.hire img,
+.view img {
+  width: 15px;
+  margin-left: 9px;
+}
+
+.socials span {
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+}
