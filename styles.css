@@ -60,7 +60,7 @@
 
 nav {
   background-color: transparent;
-  display: flex;
+  display: flex;  
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
