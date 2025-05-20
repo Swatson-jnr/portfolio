@@ -64,7 +64,7 @@ body {
 
 nav {
   background-color: transparent;
-  display: flex;  
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -129,7 +129,7 @@ nav {
     width: 0ch;
   }
   50% {
-    width: 58ch;
+    width: 98ch;
   }
   100% {
     width: 0ch;
@@ -208,4 +208,8 @@ nav {
   color: #fff;
   font-weight: 700;
   font-size: 13px;
+}
+
+.about-section {
+  height: 100vh;
 }
