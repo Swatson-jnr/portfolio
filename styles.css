@@ -82,7 +82,7 @@ nav {
 }
 
 .hero {
-  background-image: url(./images/asset\ 0.jpeg);
+  background-image: url(./images/asset0.jpeg);
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -129,7 +129,7 @@ nav {
     width: 0ch;
   }
   50% {
-    width: 98ch;
+    width: 58ch;
   }
   100% {
     width: 0ch;
